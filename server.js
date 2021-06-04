@@ -1,3 +1,4 @@
+var path = require('path')
 // Setup empty JS object to act as endpoint for all routes
 projectData = {};
 
@@ -23,7 +24,7 @@ app.use(cors());
 const port = 8888;
 
 // Initialize the main project folder
-app.use(express.static('website'));
+app.use(express.static('dist'));
 
 
 // Setup Server
@@ -36,6 +37,9 @@ function listening(){
   console.log("running.....");
 }
 //START ROUTES
+app.get('/', function (req, res) {
+  res.sendFile('D:/Computer Science/0web-projects/weather-app-webpack-test/dist/weather-app-bundle.html')
+})
 // GET method route
 app.get('/all',function(req,res)
   {

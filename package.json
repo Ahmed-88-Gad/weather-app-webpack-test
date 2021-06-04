@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "webpack"
   },
   "author": "Ahmed Gad",
   "license": "ISC",
@@ -23,5 +24,9 @@
     "cors": "^2.8.5",
     "express": "^4.17.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  }
 }
