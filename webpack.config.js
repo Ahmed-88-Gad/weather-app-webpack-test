@@ -3,7 +3,7 @@ const webpack = require ("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports=
   {
-    entry:"./index.js",
+    entry:"./website/js/index.js",
     output:
       {
         filename:"weather-app-bundle.js",
@@ -20,5 +20,13 @@ module.exports=
             }
           )
       ],
-    mode:"none"
+    mode:"none",
+    module: {
+      rules: [
+        {
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
+      ],
+    }
   };

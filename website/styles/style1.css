@@ -1,0 +1,60 @@
+@import "style2.css";
+body{
+    background: #fffff8;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app{
+    
+     /* display: flex;
+    flex-flow: row wrap;  */
+    /* grid-auto-rows: minmax(150px, auto); */
+    /* grid-template-columns:  */
+    height:100vh;
+    background: #f23557;
+    color: #f0d43a;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.holder{color: darkblue;text-align: center;
+
+}
+
+.entry{
+    background: rgba(35, 163, 46, 0.4);
+}
+
+#entryHolder{color: cornflowerblue;
+
+}
+
+#date{color: chartreuse;
+
+}
+
+#temp{color: chartreuse;
+
+}
+
+#content{color:chartreuse;
+
+}
+
+.headline {color: chartreuse;font-size: 80px;
+
+}
+.title{color:#f0d43a;
+
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+/* label{
+    display:block;
+    font-size: 27px;
+} */
+
